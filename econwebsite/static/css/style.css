@@ -438,7 +438,7 @@ p.stats-info {
 .cruise-w3-agile-left {
     background: url(../images/s1.jpg) no-repeat 0px 0px;
     background-size: cover;
-    background-attachment:fixed;
+   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -473,7 +473,7 @@ p.stats-info {
     background: url(../images/s4.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
-    background-attachment:fixed;
+ 
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
