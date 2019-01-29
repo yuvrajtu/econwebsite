@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'C:\Users\MYLAPP~1\Desktop\py1'; else echo '/C/Users/MYLAPP~1/Desktop/py1'; fi;)"
+VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'C:\Users\MYLAPP~1\Desktop\github\ECONWE~1\py1'; else echo '/C/Users/MYLAPP~1/Desktop/github/ECONWE~1/py1'; fi;)"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
