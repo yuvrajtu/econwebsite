@@ -1,0 +1,27 @@
+{% extends 'posts/fullpage.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+
+      <!-- HERO -->
+      <section class="fp-section border-bottom">
+        <div class="section section-top">
+<table class="table table-striped table-bordered table-hover table-condensed ">
+  <thead>
+    <th>Route</th>
+    <th align="right">CurrentPrice</th>
+  </thead>
+
+        {% for stock in stocks %}
+        <tr>
+          <td>{{ stock.StockName }}</td>
+          <td>{{ stock.CurrentPrice }}</td>
+        </tr>
+        {%endfor%}
+
+</table>
+
+        </div>
+      </section>
+
+{% endblock %}
