@@ -4,11 +4,11 @@ from django.urls import reverse
 
 
 class News(models.Model):
-    Id = models.AutoField(primary_key=True)
+    Id = models.IntegerField(primary_key=True)
     StockNews = models.TextField(blank=True)
 
     def __str__(self):
-        return self.Id
+        return self.StockNews
 
 
 class Stock(models.Model):

@@ -43,7 +43,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="fullpage.html">
+        <a class="navbar-brand" href="{% url 'posts:index' %}">
           <svg class="navbar-brand-svg" viewBox="0 0 245 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path>
             <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
@@ -65,7 +65,7 @@
           <!-- Links -->
           <ul class="navbar-nav ml-auto">
             <li >
-              <a class="nav-link toggle" href="#hero" id="navbarWelcome" role="button"  aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link toggle" href="{% url 'posts:index' %}" id="navbarWelcome" role="button"  aria-haspopup="true" aria-expanded="false">
                 Welcome
               </a>
 
@@ -397,12 +397,12 @@ So better get ready, for a war is coming, a war where you must ensure the best j
       </section>
 
       <!-- SERVICES -->
-      <section class="fp-section bg-light">
+      <section class="fp-section">
         <div class="section section-top">
 
 
       <!-- Cover -->
-      <div class="bg-cover" style="background-image: url("{% static 'posts/img/11.jpg' %}");"></div>
+      <div class="bg-cover" style="background-image: url('{% static 'posts/img/10.jpg' %}')";></div>
       
       <!-- Content -->
       <div class="container">
@@ -479,7 +479,7 @@ Explore your talents in the fields of general economics, marketing, law and many
                       <div class="model-img mb-5 mb-md-0">
 
                         <!-- Image -->
-                        <img src="{% static 'posts/img/5.jpg'%}" class="model-img-src img-fluid fade show" alt="...">
+                        <img src="{% static 'posts/img/88.jpg'%}" class="model-img-src img-fluid fade show" alt="...">
 
                       </div> <!-- / .model-img -->
 
@@ -571,7 +571,7 @@ Explore your talents in the fields of general economics, marketing, law and many
                       <div class="model-img mb-5 mb-md-0">
 
                         <!-- Image -->
-                        <img src="{% static 'posts/img/6.jpg'%}" class="model-img-src img-fluid fade show" alt="...">
+                        <img src="{% static 'posts/img/99.jpg'%}" class="model-img-src img-fluid fade show" alt="...">
 
                       </div> <!-- / .model-img -->
 
@@ -782,7 +782,7 @@ Explore your talents in the fields of general economics, marketing, law and many
           <div class="slider-item col-6 col-md-2">
             
             <!-- Image -->
-            <img src="{% static 'posts/img/5.jpg'%}" alt="..." class="img-fluid">
+            <img src="{% static 'posts/img/88.jpg'%}" alt="..." class="img-fluid">
 
           </div>
           <div class="slider-item col-6 col-md-2">
@@ -794,7 +794,7 @@ Explore your talents in the fields of general economics, marketing, law and many
           <div class="slider-item col-6 col-md-2">
             
             <!-- Image -->
-            <img src="{% static 'posts/img/6.jpg'%}" alt="..." class="img-fluid">
+            <img src="{% static 'posts/img/99.jpg'%}" alt="..." class="img-fluid">
 
           </div>
           <div class="slider-item col-6 col-md-2">
@@ -835,7 +835,8 @@ Explore your talents in the fields of general economics, marketing, law and many
      
       <!-- FOOTER
       ================================================== -->
-      <section class="fp-section fp-auto-height">
+   
+<section class="fp-section fp-auto-height">
         <footer class="section bg-dark">
 
           <!-- Triangles -->
@@ -849,7 +850,7 @@ Explore your talents in the fields of general economics, marketing, law and many
 
                 <!-- Brand -->
                 <p>
-                  <a href="#hero" class="footer-brand text-white">
+                  <a href="{% url 'posts:index' %}" class="footer-brand text-white">
                     <svg class="footer-brand-svg" viewBox="0 0 235 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <path d="M0 0 L 20 10 L 0 20 Z" class="text-primary" fill="currentColor"></path>
                       <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
@@ -857,35 +858,8 @@ Explore your talents in the fields of general economics, marketing, law and many
                     </svg>
                   </a>
                 </p>
-        
-              </div>
-              <div class="col-md">
-        
-                <!-- Links -->
-                <ul class="list-unstyled list-inline text-md-right">
-             
-              <li class="list-inline-item mr-2">
-                <a href="#" class="text-white">
-                  developed by
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-white">
-                  Rohit kumar
-            
-                </a>
-              </li>
-              <li class="list-inline-item mr-2">
-               <div class="rohit">
-  <img src="{% static 'posts/img/r.jpg'%}" alt="avatar" class="rohit">
-</div>
-              </li>
-            </ul>
-
-              </div>
-            </div> <!-- / .row -->
-            <div class="row align-items-center">
-              <div class="col-md">
+                <div class="row align-items-center">
+         <div class="col-md">
         
                 <!-- Copyright -->
                 <p class="text-white text-muted">
@@ -894,30 +868,67 @@ Explore your talents in the fields of general economics, marketing, law and many
                   </small>
                 </p>
 
+              </div></div>
+  <div class="row align-items-center">              <div class="col-md">
+        
+            <!-- Social links -->
+            <ul class="list-inline list-unstyled text-md-center">
+              
+              <li class="list-inline-item ml-3">
+                <a href="https://www.facebook.com/StratagemTU/?ref=page_internal">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="https://www.instagram.com/econclub">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div></div>
               </div>
               <div class="col-md">
         
-                <!-- Social links -->
-                <ul class="list-inline list-unstyled text-md-right">
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item ml-3">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item ml-3">
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                </ul>
+                <!-- Links -->
+                <ul class="list-unstyled list-inline text-md-right">
+             
+              <li class="list-inline-item mr-2">
+                <p class="text-white">
+                  developed by
+                </p>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://in.linkedin.com/in/rohit-kumar-b12717169" class="text-white">
+                  Rohit Kumar
+            
+               
+              </li>
+              
+              <li class="list-inline-item">
+               <div class="rohit">
+  <img src="{% static 'posts/img/r.jpg'%}" alt="avatar" class="rohit">
+</div></a>
+              </li></ul>
+               <ul class="list-unstyled list-inline text-md-right">
+               <li class="list-inline-item">
+                <a href="https://in.linkedin.com/in/yuvraj-singh-84b3114a" class="text-white">
+                 and Yuraj Singh
+            
+               
+              </li>
+              <li class="list-inline-item mr-2">
+               <div class="rohit">
+  <img src="{% static 'posts/img/01.jpg'%}" alt="avatar" class="rohit"></a>
+</div>
+              </li></ul>
+                
+                
+            </div>
 
               </div>
             </div> <!-- / .row -->
+            <!-- / .row -->
           </div> <!-- / .container -->
 
         </footer>
@@ -943,8 +954,6 @@ Explore your talents in the fields of general economics, marketing, law and many
 
     <!-- Theme JS -->
     <script src="{% static 'posts/js/theme.min.js'%}"></script>
-
-  </body>
 
 <!-- Mirrored from simpleqode.bitbucket.io/incline/fullpage.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 17:16:26 GMT -->
 </html>
